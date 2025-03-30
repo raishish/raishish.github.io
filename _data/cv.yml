@@ -2,96 +2,103 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Ashish Rai
     - name: Languages
-      value: English, German
+      value: English, Hindi
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.S. in Computer Science
+      institution: New York University, Courant Institute, New York
+      year: 2025
+    - title: B.Tech in Electrical & Electronics Engineering
+      institution: National Institute of Technology, Warangal
+      year: 2018
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - CGPA: 7.84/10.0
+        - Institute Merit Scholarship
+        - Delivered sessions on Intro to Machine Learning
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Graduate Assistant - NYU Vital
+      institution: New York University
+      year: Jan 2024 - May 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Responsible for development and maintenance of the NYU Vital Platform (Private Cloud for assignments).
+
+    - title: Member of Technical Staff - Performance Engineer
+      institution: VMware, Bengaluru, India
+      year: July 2018 - July 2023
       description:
-        - Description 1.
-        - Description 2.
+        - Optimized resource consumption (CPU, memory) and improved performance of vSAN storage stack.
+        - Worked on and fixed multiple customer performance bugs in on-prem and cloud environments.
+        - Led and executed IO path performance characterization for many product feature proposals.
+        - Contributed to in-house performance frameworks (Python, Java, Angular, Django, SQL).
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Applied Deep Learning Researcher Intern
+      institution: Arya.ai, Mumbai, India
+      year: May 2017 - July 2017
       description:
+        - Worked on classification of satellite images using Deep Neural Architectures.
+        - Contributed to a data type agnostic multi-threaded data pre-processing pipeline.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Applied IoT Intern
+      institution: Banyan Nation, Hyderabad, India
+      year: Dec 2016 - Feb 2017
+      description:
+        - Contributed to the development of smart dustbin sensors (based on Intel Edison) to track garbage level.
+        - Contributed to Analytics and Visualization dashboards (MEAN stack).
 
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: simpleqa-hf
+      institution: NYU Courant
+      year: Nov 2024
+      description: OpenAI SimpleQA evaluation for HuggingFace models.
+
+    - title: A vision-based approach to ARC-AGI
+      institution: NYU Courant
+      year: Oct 2024 - (in-progress)
+      description: Trying vision and multimodal models to advance the ARC-AGI challenge.
+
+    - title: Length generalization of arithmetic performance of LLMs
+      institution: NYU Courant
+      year: Oct 2024 - Dec 2024
+      description: Blog post on analyzing length generalization in LLMs.
+
+    - title: Human vs Machine Attention in Visual Question Answering
+      institution: NYU Courant
+      year: Apr 2024 - May 2024
+      description:
+        - Predicting answers from images and comparing human vs. model attention.
+        - Metrics: AUC, IOU, PCC (Quantitative), Saliency Maps (Qualitative).
+
+    - title: Self-supervised stochastic conditional video prediction
+      institution: NYU Courant
+      year: Nov 2023 - Dec 2023
+      description:
+        - Given a set of context frames, predict the next set of frames of videos.
+        - Done as part of the final project for CSCI-GA 2572 - Deep Learning.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2015
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - Institute Merit Scholarship
+    - year: 2012
       items:
-        - Max Planck Medal
+        - Nominated to attend DST INSPIRE Internship Camp (Top 2 out of ~500).
 
-- title: Academic Interests
-  type: nested_list
+- title: Volunteering
+  type: time_table
   contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    - title: City Manager – Shelter Operations Fellow, Bangalore
+      year: May 2020 – Aug 2021
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Academic Support Volunteer
+      year: Jul 2019 – Mar 2020
