@@ -20,9 +20,9 @@ social: true # includes social icons at the bottom of the page
 
 I'm an AI researcher seeking to understand how deep learning models work better.
 
-- 🔭  I’m currently working on understanding shortcut learning in small and large language models.
-- 🔭  I’m also working on quantifying the performance of pure vision models to solve the [ARC-AGI challenge](https://arcprize.org/).
-- 👯  I’m looking to collaborate on interpreting language models and how they perform arithmetic operations.
-- 🌱  I’m currently learning mechanistic interpretability of language models.
-- 🤔  I’m looking for help with coming up and proving theories about large language models.
-- 😄  Pronouns: he/him
+- 🔭 I’m currently working on understanding shortcut learning in small and large language models.
+- 🔭 I’m also working on quantifying the performance of pure vision models to solve the [ARC-AGI challenge](https://arcprize.org/).
+- 👯 I’m looking to collaborate on interpreting language models and how they perform arithmetic operations.
+- 🌱 I’m currently learning mechanistic interpretability of language models.
+- 🤔 I’m looking for help with coming up and proving theories about large language models.
+- 😄 Pronouns: he/him

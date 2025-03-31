@@ -48,9 +48,7 @@
       "startDate": "2017-05",
       "endDate": "2017-07",
       "summary": "Worked on classification of satellite images using Deep Neural Architectures.",
-      "highlights": [
-        "Contributed to a data type agnostic multi-threaded data pre-processing pipeline."
-      ]
+      "highlights": ["Contributed to a data type agnostic multi-threaded data pre-processing pipeline."]
     },
     {
       "name": "Banyan Nation, Hyderabad, India",
@@ -58,9 +56,7 @@
       "startDate": "2016-12",
       "endDate": "2017-02",
       "summary": "Contributed to the development of smart dustbin sensors (based on Intel Edison) to track garbage level.",
-      "highlights": [
-        "Contributed to Analytics and Visualization dashboards (MEAN stack)."
-      ]
+      "highlights": ["Contributed to Analytics and Visualization dashboards (MEAN stack)."]
     }
   ],
   "volunteer": [
@@ -92,10 +88,7 @@
       "startDate": "2014",
       "endDate": "2018",
       "score": "CGPA: 7.84/10.0",
-      "highlights": [
-        "Institute Merit Scholarship",
-        "Delivered sessions on Intro to Machine Learning"
-      ]
+      "highlights": ["Institute Merit Scholarship", "Delivered sessions on Intro to Machine Learning"]
     }
   ],
   "awards": [
@@ -112,21 +105,15 @@
   "skills": [
     {
       "name": "Programming Languages & Frameworks",
-      "keywords": [
-        "Python", "Pytorch", "Java", "SQL", "LaTeX", "Angular", "Django"
-      ]
+      "keywords": ["Python", "Pytorch", "Java", "SQL", "LaTeX", "Angular", "Django"]
     },
     {
       "name": "Deep Learning Skills",
-      "keywords": [
-        "Pytorch", "HuggingFace", "DDP", "Slurm"
-      ]
+      "keywords": ["Pytorch", "HuggingFace", "DDP", "Slurm"]
     },
     {
       "name": "Other Skills",
-      "keywords": [
-        "Virtual Machines", "Cloud (AWS)", "Distributed Computing", "Teaching"
-      ]
+      "keywords": ["Virtual Machines", "Cloud (AWS)", "Distributed Computing", "Teaching"]
     }
   ],
   "languages": [
