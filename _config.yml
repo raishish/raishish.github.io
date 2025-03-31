@@ -148,7 +148,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Latent Space # blog_name will be displayed in your blog page
-blog_description: Here, I share both initial explorations and publihsed findings of my research.
+blog_description: Here, I share both initial explorations and published findings of my research.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
