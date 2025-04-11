@@ -18,11 +18,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I'm an AI researcher seeking to understand how deep learning models work better.
+I'm an AI researcher and practitioner trying to understand and improve the performance of deep learning models.
 
-- 🔭 I’m currently working on understanding shortcut learning in small and large language models.
-- 🔭 I’m also working on quantifying the performance of pure vision models to solve the [ARC-AGI challenge](https://arcprize.org/).
-- 👯 I’m looking to collaborate on interpreting language models and how they perform arithmetic operations.
-- 🌱 I’m currently learning mechanistic interpretability of language models.
-- 🤔 I’m looking for help with coming up and proving theories about large language models.
-- 😄 Pronouns: he/him
+- 🔭 I’m currently working on using discrete diffusion models to solve the [ARC-AGI challenge](https://arcprize.org/).
+- 🔭 I’m also working to gain a causal / mechanistic understanding of how discrete diffusion language models work.
+- 🌱 I’m currently learning about diffusion models, applied to both continuous and discrete data.
