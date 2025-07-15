@@ -25,6 +25,10 @@ jobs:
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
+      - name: Install jupyter and ImageMagick
+        run: |
+          pip3 install --upgrade jupyter
+          sudo apt-get update && sudo apt-get install -y imagemagick
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build site
