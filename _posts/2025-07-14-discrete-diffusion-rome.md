@@ -47,7 +47,6 @@ _styles: >
 # citation: true
 ---
 
-
 ## Introduction
 
 In this post, I will discuss the intermediate progress on using ROME to study information retrieval in masked (discrete) diffusion language models.
@@ -56,27 +55,19 @@ Page under construction!
 
 Analysis in-progress.
 
-
 ## A primer on masked discrete diffusion
-
 
 ## Background and Related Work
 
-
 ## Dataset
-
 
 ## Methodology
 
-
 ## Current Progress
-
 
 ## Future Work
 
-
 ## Acknowledgements
-
 
 ## References
 
