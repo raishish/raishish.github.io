@@ -48,9 +48,14 @@ _styles: >
 # citation: true
 ---
 
-The full PDF report (with additional results) is available at this [link](https://github.com/raishish/arithmetic-interp/blob/main/length-generalization-of-arithmetic-performance.pdf).
-
 ## Summary
+
+**tl;dr**
+
+We tested arithmetic capabilities of GPT-4o-mini, LLaMa-3.1-70B, LLaMa-3.1-8B, and Gemma-2b-it on increasingly complex numbers. While these models achieve very well (~94%) on GSM-8K, their performance degrades significantly with number complexity: addition works up to 6-digit numbers then fails, multiplication drops to 0% accuracy after 3-digit numbers, unique digit count matters more than number size (e.g., "48346" is harder than "480000"). Models consistently get first/last digits right even when overall answers are wrong, and mechanistic analysis shows final numerical answers emerge in later transformer layers.
+
+**Bottom line:** Current LLMs have clear arithmetic boundaries that aren't solved by scale alone.
+
 ### Team
 
 Team members: Ashish Rai, [Akash Peddaputha](https://www.linkedin.com/in/akashpeddaputha/), [Aman Gupta](https://www.linkedin.com/in/the-aman-gupta/)
