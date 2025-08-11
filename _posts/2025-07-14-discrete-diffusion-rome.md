@@ -16,6 +16,7 @@ authors:
 bibliography: 2025-07-14-discrete-diffusion-rome.bib
 
 toc:
+  - name: Summary
   - name: Introduction
   - name: A primer on masked discrete diffusion
   - name: Background and Related Work
@@ -47,13 +48,19 @@ _styles: >
 # citation: true
 ---
 
-## Introduction
+## Summary
 
 In this post, I will discuss the intermediate progress on using ROME to study information retrieval in masked (discrete) diffusion language models.
 
 Page under construction!
 
 Analysis in-progress.
+
+## Introduction
+
+Masked diffusion language models (MDLMs) are a new direction in language modeling research, offering a non-autoregressive alternative to the more commonly used autoregressive models. Since these model generate output responses non-autoregressively in token space and in discrete steps, this lends us the question of the causal (or non-causal) nature of response generation compared to autoregressive models. Mechanistic interpretability (MI) is a broader domain of techniques that aim to understand the internal circuits of deep learning models. Although mechanistic interpretability techniques have been widely used on autoregressive models and have gained significant insights into understanding how autoregressive models generate responses, they have not yet been widely applied to diffusion-based language models.
+
+This study aims to utilize ROME, a techique for locating knowledge in transformer-based models, on MDLMs to investigate how information is stored and retrieved in diffusion language models. Through our work, we hope to gain new insights on interpretability of masked diffusion language models.
 
 ## A primer on masked discrete diffusion
 
