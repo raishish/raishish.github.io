@@ -70,6 +70,36 @@ _styles: >
     background-color: var(--global-bg-color-dark);
     font-weight: bold;
   }
+  .alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    border: 1px solid #bee5eb;
+    border-left: 4px solid #17a2b8;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeaa7;
+    border: 1px solid #ffeaa7;
+    border-left: 4px solid #ffc107;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    border: 1px solid #c3e6cb;
+    border-left: 4px solid #28a745;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
 
 # citation: true
 ---
@@ -261,74 +291,6 @@ The masked diffusion model was first prompted to generate single-token completio
 
 The models were then fine tuned on the Reversal curse dataset and attained high accuracy [Table 3](#tab-reversal-curse-eval), so we chose this dataset. The samples from the dataset are depicted in [Fig. 4](#dataset).
 
-<table id="tab-reversal-curse-eval">
-  <caption><strong>Table 3:</strong> Scaling sampling steps leads to better knowledge recall performance in forward and reverse directions.</caption>
-  <thead>
-    <tr>
-      <th rowspan="2">Sampling Steps</th>
-      <th colspan="2">Description2Person</th>
-      <th colspan="2">Person2Description</th>
-    </tr>
-    <tr>
-      <th>Same (easy)</th>
-      <th>Reverse (difficult)</th>
-      <th>Same (difficult)</th>
-      <th>Reverse (easy)</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>Acc ↑</th>
-      <th>Acc ↑</th>
-      <th>Acc ↑</th>
-      <th>Acc ↑</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1 step</td>
-      <td>91.3</td>
-      <td>0</td>
-      <td>0</td>
-      <td>40.3</td>
-    </tr>
-    <tr>
-      <td>2 steps</td>
-      <td>97</td>
-      <td>0.7</td>
-      <td>2.3</td>
-      <td>79</td>
-    </tr>
-    <tr>
-      <td>4 steps</td>
-      <td>96.3</td>
-      <td>17</td>
-      <td>25</td>
-      <td>87.7</td>
-    </tr>
-    <tr>
-      <td>8 steps</td>
-      <td>97.3</td>
-      <td>27.3</td>
-      <td>37.7</td>
-      <td>87.3</td>
-    </tr>
-    <tr>
-      <td>16 steps</td>
-      <td><strong>98</strong></td>
-      <td><strong>31</strong></td>
-      <td>42</td>
-      <td>88.3</td>
-    </tr>
-    <tr>
-      <td>32 steps</td>
-      <td>97.7</td>
-      <td>29.7</td>
-      <td><strong>43</strong></td>
-      <td><strong>90</strong></td>
-    </tr>
-  </tbody>
-</table>
-
 <figure id="dataset">
   <img src="{{ '/assets/img/2025-discrete-diffusion-rome/dataset.png' | relative_url }}" alt="Dataset">
   <figcaption><strong>Figure 4:</strong> The reversal curse dataset.</figcaption>
@@ -425,9 +387,85 @@ This procedure will be done while trying to elicit knowledge in both forward (sa
 
 <!-- More details about the dataset can be found in Appendix Section \ref{Data set details}. -->
 
-The existing code for the study can be found at [raishish/diffusion-interp](https://github.com/raishish/diffusion-interp).
-
 ## Current Progress
+
+We begin with a scaling experiment to study the impact of sampling steps on knowledge recall, measured with exact match accuracy <d-cite key="berglund2023reversal"></d-cite>. As the sampling steps are increased, there is an increase in knowledge recall in both forward and reverse directions (refer [Table 3](#tab-reversal-curse-eval)).
+
+<div class="alert alert-warning">
+Please note that these accuracy values for <code>Description2Person</code> reverse and <code>Person2Description</code> reverse are different from the ones reported in <d-cite key="nie2024scaling"></d-cite>. *We believe this is an error in reporting of the values since reverse recall is harder to model for language models, majorly because the perplexity of the text in description is usually higher than the text in person names of the Reversal Curse dataset <d-cite key="berglund2023reversal"></d-cite>.*
+</div>
+
+<table id="tab-reversal-curse-eval">
+  <caption><strong>Table 3:</strong> Scaling sampling steps leads to better knowledge recall performance in forward and reverse directions.</caption>
+  <thead>
+    <tr>
+      <th rowspan="2">Sampling Steps</th>
+      <th colspan="2">Description2Person</th>
+      <th colspan="2">Person2Description</th>
+    </tr>
+    <tr>
+      <th>Same (easy)</th>
+      <th>Reverse (difficult)</th>
+      <th>Same (difficult)</th>
+      <th>Reverse (easy)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>% Acc ↑</th>
+      <th>% Acc ↑</th>
+      <th>% Acc ↑</th>
+      <th>% Acc ↑</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 step</td>
+      <td>91.3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>40.3</td>
+    </tr>
+    <tr>
+      <td>2 steps</td>
+      <td>97</td>
+      <td>0.7</td>
+      <td>2.3</td>
+      <td>79</td>
+    </tr>
+    <tr>
+      <td>4 steps</td>
+      <td>96.3</td>
+      <td>17</td>
+      <td>25</td>
+      <td>87.7</td>
+    </tr>
+    <tr>
+      <td>8 steps</td>
+      <td>97.3</td>
+      <td>27.3</td>
+      <td>37.7</td>
+      <td>87.3</td>
+    </tr>
+    <tr>
+      <td>16 steps</td>
+      <td><strong>98</strong></td>
+      <td><strong>31</strong></td>
+      <td>42</td>
+      <td>88.3</td>
+    </tr>
+    <tr>
+      <td>32 steps</td>
+      <td>97.7</td>
+      <td>29.7</td>
+      <td><strong>43</strong></td>
+      <td><strong>90</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+This is a work-in-progress. More results coming soon!
+
+The existing code for the study can be found at [raishish/diffusion-interp](https://github.com/raishish/diffusion-interp).
 
 ## Future Work
 
