@@ -18,8 +18,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I'm an AI researcher and practitioner trying to understand and improve the performance of deep learning models.
+I'm an applied AI researcher and practitioner trying to understand and improve the performance of deep learning models.
 
-- 🔭 I’m currently working on using discrete diffusion models to solve the [ARC-AGI challenge](https://arcprize.org/).
-- 🔭 I’m also working to gain a causal / mechanistic understanding of how discrete diffusion language models work.
-- 🌱 I’m currently learning about diffusion models, applied to both continuous and discrete data.
+- 🔬 I’m currently working on understanding how information is stored and retrieved in discrete diffusion language models using ROME. Checkout 🔬 [discrete-diffusion-rome](https://github.com/raishish/discrete-diffusion-rome).
+- 🌱 I’m currently learning GPU programming (and re-learning C++) across different accelerator backends. Checkout 🚀 [unikernels](https://github.com/raishish/unikernels).
+- 🧑🏻‍💻 I often contribute to open source and open science projects as well.
